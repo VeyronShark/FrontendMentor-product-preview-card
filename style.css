@@ -173,9 +173,6 @@
   }
 }
 @layer utilities {
-  .static {
-    position: static;
-  }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
   }
@@ -190,9 +187,6 @@
   }
   .flex {
     display: flex;
-  }
-  .table {
-    display: table;
   }
   .h-4 {
     height: calc(var(--spacing) * 4);
@@ -251,8 +245,11 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-contain {
-    background-size: contain;
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -319,25 +316,9 @@
   .line-through {
     text-decoration-line: line-through;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .duration-50 {
     --tw-duration: 50ms;
     transition-duration: 50ms;
-  }
-  .duration-100 {
-    --tw-duration: 100ms;
-    transition-duration: 100ms;
-  }
-  .duration-150 {
-    --tw-duration: 150ms;
-    transition-duration: 150ms;
-  }
-  .duration-200 {
-    --tw-duration: 200ms;
-    transition-duration: 200ms;
   }
   .hover\:bg-greenHover {
     &:hover {
@@ -396,6 +377,8 @@
 }
 #product-img {
   background-image: url(./images/image-product-mobile.jpg);
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   #product-img {
@@ -410,11 +393,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -428,7 +406,6 @@
     *, ::before, ::after, ::backdrop {
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-leading: initial;
     }
