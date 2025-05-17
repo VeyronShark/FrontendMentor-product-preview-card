@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Importing Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+<body class="flex justify-center items-center h-screen w-screen bg-cream p-4">
+  <section id="product-card" class="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden max-w-154">
+    <div id="product-img" class="w-full md:w-1/2 bg-contain h-60 md:h-[28.8rem]"></div>
+
+    <div id="product-details" class="w-full md:w-1/2 p-6 md:p-8">
+      <div id="product-type" class="uppercase text-grey font-sans text-xs tracking-[0.3rem] font-medium">Perfume</div>
+
+      <h1 id="product-name" class="text-3xl/8 font-serif font-bold my-3 md:text-[2.2rem]/8 md:my-6">Gabrielle Essence Eau De Parfum</h1>
+
+      <div id="product-desc" class="text-sm/5 text-grey font-sans font-medium mb-5 md:leading-6">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.
+      </div>
+
+      <div id="product-price" class="flex items-center gap-5">
+        <div id="price-main" class="text-green font-serif font-bold text-[2rem]"> $149.99</div>
+
+        <div id="price-prediscount" class="text-grey line-through text-sm">$169.99</div>
+      </div>
+
+      <div id="product-atc" class="bg-green text-white flex items-center justify-center gap-3 py-3 rounded-lg mt-4 md:mt-5 md:py-4 cursor-pointer duration-50 hover:bg-greenHover">
+        <img src="./images/icon-cart.svg" alt="buy button icon" id="atc-icon" class="w-4 h-4">
+
+        <div id="atc-text" class="font-sans text-sm font-semibold">Add to Cart</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

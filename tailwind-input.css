@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-sans: "Montserrat", sans-serif;
+  --font-serif: "Fraunces", serif;
+
+  /* Colors */
+  --color-blackBlue: hsl(212, 21%, 14%);
+  --color-grey: hsl(228, 12%, 48%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-green: hsl(158, 36%, 37%);
+  --color-greenHover: hsl(158, 42%, 18%);
+}
+
+#product-img {
+  background-image: url(./images/image-product-mobile.jpg);
+}
+
+@media (min-width: 768px){
+  #product-img {
+    background-image: url(./images/image-product-desktop.jpg);
+  }
+}
